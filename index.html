@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+    <div class="container flex bg-black">
+
+        <div class="left border bg-grey rounded">
+
+            <div class="close">
+                <img class="invert" src="close.svg" alt="close">
+            </div>
+
+            <div class="home bg-grey m-1 p-1">
+                <div class="logo"><img class="invert" src="logo.svg" alt="logo"></div>
+                <ul>
+                    <li><img class="invert" src="home.svg" alt="home"> Home</li>
+                    <li><img class="invert searchInHome" src="search.svg" alt="search"> 
+                        <div class="searchInHome">Search</div></li>
+                </ul>
+            </div>
+
+            <div class="library bg-black rounded m-1 p-1">
+                <div class="heading">
+                    <img class="invert" src="playlist.svg" alt="playlist">
+                    <h2>Your Library</h2>
+                </div>
+                <div class="songlist">
+                    <ul>
+
+                    </ul>
+                </div>
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right border bg-grey rounded">
+            <div class="header rounded">
+                <div class="nav">
+                    <!-- Hamburger for mobile -->
+                    <img class="invert hamburger" src="hamburger.svg" alt="menu">
+                    <!-- Original desktop arrows -->
+                    <svg class="back-fwd desktop-nav" xmlns="http://www.w3.org/2000/svg" version="1.1" width="15"
+                        height="15" viewBox="0 0 256 256" xml:space="preserve">
+                        <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;"
+                            transform="translate(1.4066 1.4066) scale(2.81 2.81)">
+                            <path
+                                d="M 65.75 90 c 0.896 0 1.792 -0.342 2.475 -1.025 c 1.367 -1.366 1.367 -3.583 0 -4.949 L 29.2 45 L 68.225 5.975 c 1.367 -1.367 1.367 -3.583 0 -4.95 c -1.367 -1.366 -3.583 -1.366 -4.95 0 l -41.5 41.5 c -1.367 1.366 -1.367 3.583 0 4.949 l 41.5 41.5 C 63.958 89.658 64.854 90 65.75 90 z"
+                                style="stroke: none; stroke-width: 1; fill: white;" />
+                        </g>
+                    </svg>
+                    &ensp;
+                    <svg class="back-fwd desktop-nav" xmlns="http://www.w3.org/2000/svg" version="1.1" width="15"
+                        height="15" viewBox="0 0 256 256" xml:space="preserve">
+                        <g transform="translate(1.4066 1.4066) scale(2.81 2.81) rotate(180, 45, 45)"
+                            style="stroke: none; fill: white;">
+                            <path
+                                d="M 65.75 90 c 0.896 0 1.792 -0.342 2.475 -1.025 c 1.367 -1.366 1.367 -3.583 0 -4.949 L 29.2 45 L 68.225 5.975 c 1.367 -1.367 1.367 -3.583 0 -4.95 c -1.367 -1.366 -3.583 -1.366 -4.95 0 l -41.5 41.5 c -1.367 1.366 -1.367 3.583 0 4.949 l 41.5 41.5 C 63.958 89.658 64.854 90 65.75 90 z" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="searchBar">
+                    <img class="invert" src="search.svg" alt="">
+                    <input type="text" placeholder="What do you want to listen to?">
+                </div>
+                <div class="buttons">
+                    <button class="signup">SignUp</button>
+
+                    <button class="login">Login</button>
+                </div>
+            </div>
+
+            <div class="spotifyPlaylists">Spotify Playlists
+                <div class="cardContainer">
+                    <div class="card">
+                        <div class="play">
+                            <svg width="60" height="60" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="45" fill="#1ED760" />
+                                <polygon points="40,30 40,70 70,50" fill="black" />
+                            </svg>
+                        </div>
+                        <img class="albumCover" src="linkini.jpeg" alt="album_cover">
+                        <h1>Linkin Park</h1>
+                        <p>This is an album that contains the best songs ever</p>
+                    </div>
+                    <div class="card">
+                        <div class="play">
+                            <svg width="60" height="60" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="45" fill="#1ED760" />
+                                <polygon points="40,30 40,70 70,50" fill="black" />
+                            </svg>
+                        </div>
+                        <img class="albumCover" src="imagine.jpeg" alt="album_cover">
+                        <h1>Imagine Drags</h1>
+                        <p>Energetic hits and anthems from the chart-topping band.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="play">
+                            <svg width="60" height="60" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="45" fill="#1ED760" />
+                                <polygon points="40,30 40,70 70,50" fill="black" />
+                            </svg>
+                        </div>
+                        <img class="albumCover" src="coldplay.jpeg" alt="album_cover">
+                        <h1>Coldplay</h1>
+                        <p>Soothing melodies and stadium-filling anthems for every mood.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="play">
+                            <svg width="60" height="60" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="45" fill="#1ED760" />
+                                <polygon points="40,30 40,70 70,50" fill="black" />
+                            </svg>
+                        </div>
+                        <img class="albumCover" src="arctic.jpeg" alt="album_cover">
+                        <h1>Arctic Monkeys</h1>
+                        <p>Indie rock classics and modern hits to set the vibe right.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="play">
+                            <svg width="60" height="60" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="45" fill="#1ED760" />
+                                <polygon points="40,30 40,70 70,50" fill="black" />
+                            </svg>
+                        </div>
+                        <img class="albumCover" src="ts.jpeg" alt="album_cover">
+                        <h1>Taylor Swift</h1>
+                        <p>From country roots to pop sensations — her best songs gathered here.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="play">
+                            <svg width="60" height="60" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="45" fill="#1ED760" />
+                                <polygon points="40,30 40,70 70,50" fill="black" />
+                            </svg>
+                        </div>
+                        <img class="albumCover" src="ed.jpeg" alt="album_cover">
+                        <h1>Ed Sheeran</h1>
+                        <p>Romantic ballads and acoustic hits from the singer-songwriter.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="play">
+                            <svg width="60" height="60" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="45" fill="#1ED760" />
+                                <polygon points="40,30 40,70 70,50" fill="black" />
+                            </svg>
+                        </div>
+                        <img class="albumCover" src="weeknd.jpeg" alt="album_cover">
+                        <h1>The Weeknd</h1>
+                        <p>R&B and pop vibes from The Weeknd’s albums.</p>
+                    </div>
+                    <div class="card">
+                        <div class="play">
+                            <svg width="60" height="60" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="45" fill="#1ED760" />
+                                <polygon points="40,30 40,70 70,50" fill="black" />
+                            </svg>
+                        </div>
+                        <img class="albumCover" src="billie.jpeg" alt="album_cover">
+                        <h1>Billie Eilish</h1>
+                        <p>Dark pop anthems and haunting ballads from Billie.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="play">
+                            <svg width="60" height="60" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="45" fill="#1ED760" />
+                                <polygon points="40,30 40,70 70,50" fill="black" />
+                            </svg>
+                        </div>
+                        <img class="albumCover" src="post.jpeg" alt="album_cover">
+                        <h1>Post Malone</h1>
+                        <p>Hip-hop, pop, and rock hits from Post Malone.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="play">
+                            <svg width="60" height="60" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="45" fill="#1ED760" />
+                                <polygon points="40,30 40,70 70,50" fill="black" />
+                            </svg>
+                        </div>
+                        <img class="albumCover" src="dua.jpeg" alt="album_cover">
+                        <h1>Dua Lipa</h1>
+                        <p>Dance pop hits to keep you moving all night.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="playbar bg-black">
+                <div class="songinfo">
+                    <div class="songName">Song name</div>
+                    <div class="songArtist">Song artist</div>
+                </div>
+                
+                <div class="seekbarContainer">
+                    <div class="timeContainer">
+                        <div class="currentTime">0:00</div>
+                        
+                        <div class="seekbar">
+                            <div class="progress-bar"></div>
+                            <div class="circle"></div>
+                        </div>
+                        <div class="totalTime">0:00</div>
+                    </div>
+                </div>
+
+
+                <div class="playbuttons">
+                    <svg id="prevButtonInPlaybar" class="prev_next" width="69" height="50" viewBox="0 0 69 50"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <polygon points="45,10 25,25 45,40" fill="gray" />
+                        <rect x="20" y="10" width="5" height="30" fill="gray" />
+                    </svg>
+                    <img id="playButtonInPlaybar" class="playbtn" src="pause.svg" alt="play">
+                    <svg id="nextButtonInPlaybar" class="prev_next" width="69" height="50" viewBox="0 0 69 50"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <polygon points="20,10 40,25 20,40" fill="gray" />
+                        <rect x="42" y="10" width="5" height="30" fill="gray" />
+                    </svg>
+                </div>
+
+                <div class="volumeControl">
+                    <input type="range" min="0" max="1" step="0.01" value="1">
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
